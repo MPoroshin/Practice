@@ -83,41 +83,59 @@ header {
 
 @media (max-width: 1024px) {
     header {
-        /*grid-template-columns: auto auto;
+        grid-template-columns: none;
         grid-template-areas: 
             "a b"
             "c c";
-        padding-right: 10%;*/
+        justify-content: center;
+        
     }
 
     .logo {
+        justify-self: start;
         width: 237px;
-        /*align-self: center;
-        justify-self: self-start;*/
+        margin-bottom: 16px;
+        margin-left: 1vw;
+        margin-right: 4vw;
     }
 
     .upper, .lower {
-        
+        min-width: 0px;
+        max-width: 1024px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .upper {
         font-size: 20px;
+        justify-content: space-between;
+        min-width: 435px;
+        
         
     }
 
     .upper a {
-        margin-top: 0;
-        margin-bottom: 0;
+        margin-top: auto;
+        margin-bottom: 26px;
     }
 
     .lower {
+        justify-content: space-between;
         font-size: 24px;
+        width: 80vw;
+        margin-left: 1vw;
+        min-width: 720px;
     }
 
     .lower a {
         margin-top: 0;
         margin-bottom: 0;
     }
+}
 
 
+@media (max-width: 850px) {
+    * {
+        display: none;
+    }
 }
